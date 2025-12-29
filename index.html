@@ -1,0 +1,977 @@
+<h1 style="text-align: center;">COMPUTER ARCHITECTURE WORKBOOK</h1>
+<h3 style="text-align: center;">UNIT 1 </h3>
+<h3 style="text-align: center;">[CHAPTER 3] </h3>
+
+  
+  <div class="section">
+<h2>CONTRIBUTING MEMBERS : </h2></div>
+<h3>1.SHANMUGAPRIYA P (2513711058037)  </h3>
+<h3>2.SMIRTI R (2513711058040) </h3>
+<h3>3.ADITI MISHRA (2513711058001) </h3>
+<h3>4.SS PAVITHRA (2513711058032)  </h3>
+<h3>5.VANDHANA P (2513711058048) </h3>
+<h3>6.VIDHYAA SAI S (2513711058051)  </h3>
+<h3>7.YOGITHA SRI D (2513711058052)  </h3>
+<h3>8.S KAVIPRADHA (2513711058031)  </h3>
+<hr>
+
+<h1>Computer Components</h1>
+
+<h2>🖥️ Von Neumann Architecture</h2>
+
+<p>
+Modern computer systems are based on the <b>von Neumann architecture</b>, proposed by
+<b>John von Neumann</b>. It introduced the idea of storing programs and data in the
+same memory, which made computers more flexible and powerful.
+</p>
+
+<div class="highlight-box">
+  <b>📌 Did You Know?</b><br>
+  The von Neumann architecture is the foundation of most modern computers used today.
+</div>
+
+<h3>🔑 Key Principles</h3>
+
+<div class="highlight-box">
+  <b>• Single Memory:</b> Data and instructions are stored together in a
+  <b>single read–write memory</b>.
+</div>
+
+<div class="highlight-box">
+  <b>• Address-Based Memory:</b> Memory locations are identified using
+  <b>addresses</b>, not by data type.
+</div>
+
+<div class="highlight-box">
+  <b>• Sequential Execution:</b> Instructions are executed one after another,
+  unless control instructions change the order.
+</div>
+
+<h3>⚙️ From Hardware to Software</h3>
+
+<p>
+Earlier computers used <b>hardwired programs</b>, meaning the hardware had to be
+physically rewired for each task.
+</p>
+
+<div class="highlight-box">
+  <b>💡 Key Idea:</b><br>
+  Von Neumann introduced <b>general-purpose hardware</b> controlled by
+  <b>instructions</b>. A sequence of instructions forms <b>software</b>.
+</div>
+
+<h3>🧠 Central Processing Unit (CPU)</h3>
+
+<p>The <b>CPU</b> is the brain of the computer. It mainly consists of:</p>
+
+<div class="highlight-box">
+  <b>• Instruction Interpreter:</b> Fetches and decodes instructions.<br><br>
+  <b>• Arithmetic and Logic Unit (ALU):</b> Performs calculations and logical decisions.
+</div>
+
+<h3>🔄 Memory and I/O</h3>
+
+<p>
+For smooth operation, computers use <b>Input and Output (I/O) devices</b> to receive
+data and display results.
+</p>
+
+<div class="highlight-box">
+  <b>🗂️ Main Memory:</b><br>
+  Temporarily stores data and instructions while programs are running.
+</div>
+
+<h3>📚 Reference Links</h3>
+
+<ul>
+  <li>
+    <a href="https://en.wikipedia.org/wiki/Von_Neumann_architecture" target="_blank">
+      Von Neumann Architecture – Wikipedia
+    </a>
+  </li>
+  <li>
+    <a href="https://www.geeksforgeeks.org/von-neumann-architecture/" target="_blank">
+      Von Neumann Architecture – GeeksforGeeks
+    </a>
+  </li>
+  <li>
+    <a href="https://www.britannica.com/technology/computer-architecture" target="_blank">
+      Computer Architecture – Britannica
+    </a>
+  </li>
+</ul>
+
+<style>
+.highlight-box {
+  border-left: 5px solid black;
+  background-color: #f5f5f5;
+  padding: 12px 15px;
+  margin: 15px 0;
+  font-size: 15px;
+}
+</style>
+
+<div class="button-section">
+  <a href="https://wayground.com/join?gc=58943398&source=liveDashboard"
+     target="_blank"
+     class="quiz-btn">
+    Click Here to Attend the Quiz
+  </a>
+</div>
+
+<style>
+.button-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.quiz-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+.quiz-btn:hover {
+  background-color: white;
+  color: black;
+}
+</style>
+
+<!-- 🔽 FLASHCARDS CONVERTED TO NORMAL INTERACTIVE TEXT 🔽 -->
+
+<h3>📘 Important Registers</h3>
+
+<div class="register-container">
+
+  <div class="register-item">
+    <div class="register-title">Memory Address Register (MAR)</div>
+    <div class="register-desc">Holds the address of the memory location.</div>
+  </div>
+
+  <div class="register-item">
+    <div class="register-title">Memory Buffer Register (MBR)</div>
+    <div class="register-desc">Holds data being transferred.</div>
+  </div>
+
+  <div class="register-item">
+    <div class="register-title">I/O Address Register (I/OAR)</div>
+    <div class="register-desc">Stores the address of the I/O device.</div>
+  </div>
+
+  <div class="register-item">
+    <div class="register-title">I/O Buffer Register (I/OBR)</div>
+    <div class="register-desc">Holds data transferred to or from I/O devices.</div>
+  </div>
+
+</div>
+
+<style>
+.register-container {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.register-item {
+  border: 2px solid black;
+  margin-bottom: 12px;
+}
+
+.register-title {
+  background: black;
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-desc {
+  display: none;
+  padding: 14px;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+</style>
+
+<script>
+document.querySelectorAll(".register-title").forEach(title => {
+  title.addEventListener("click", () => {
+    const desc = title.nextElementSibling;
+    desc.style.display = desc.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+<hr>
+
+<h1>Computer Functions & Instruction Cycle</h1>
+
+<h2>📌 Basic Function of a Computer</h2>
+
+<pre>
+┌──────────────┐
+│   MEMORY     │
+│(Instructions)│
+└──────┬───────┘
+       │ Fetch
+       ▼
+┌──────────────┐
+│   PROCESSOR  │
+│    (CPU)     │
+└──────┬───────┘
+       │ Execute
+       ▼
+┌──────────────┐
+│  OPERATION   │
+│ (ALU / I/O)  │
+└──────┬───────┘
+       ↺ Repeat until HALT
+</pre>
+
+<p>
+The basic function of a computer is to <b>fetch</b> and <b>execute</b> instructions stored
+in memory until a <b>HALT</b> instruction occurs.
+</p>
+
+<hr>
+
+<h2>🔄 Instruction Cycle</h2>
+
+<p>
+The <b>instruction cycle</b> is the complete process of fetching and executing an instruction.
+</p>
+
+<ul>
+  <li><b>Fetch Cycle:</b> Instruction is fetched from memory using the PC and loaded into IR.</li>
+  <li><b>Execute Cycle:</b> Instruction is decoded and executed by the processor.</li>
+</ul>
+
+<p><b>Cycle repeats until HALT instruction.</b></p>
+
+<hr>
+
+<h2>🧠 CPU Registers</h2>
+
+<ul>
+  <li><b>Program Counter (PC):</b> Stores address of next instruction.</li>
+  <li><b>Instruction Register (IR):</b> Holds current instruction.</li>
+  <li><b>Accumulator (AC):</b> Stores intermediate data/results.</li>
+</ul>
+
+<hr>
+
+<h2>⚙️ Types of Processor Operations</h2>
+
+<ul>
+  <li>Processor–Memory Operation</li>
+  <li>Processor–I/O Operation</li>
+  <li>Data Processing Operation</li>
+  <li>Control Operation</li>
+</ul>
+
+<hr>
+
+<h2>🧾 Instruction Format</h2>
+
+<pre>
+┌───────────┬──────────────┐
+│  OPCODE   │   ADDRESS    │
+└───────────┴──────────────┘
+</pre>
+
+<ul>
+  <li><b>Opcode:</b> Specifies the operation</li>
+  <li><b>Address:</b> Specifies memory or I/O location</li>
+</ul>
+
+<hr>
+
+<h2>🔁 Instruction Cycle State Diagram (Exam Gold)</h2>
+
+<p><b>IAC → IF → IOD → OAC → OF → DO → OS → Next Instruction</b></p>
+
+<hr>
+
+<h2>🛑 HALT Instruction</h2>
+
+<p>
+The <b>HALT</b> instruction stops program execution and ends the instruction cycle.
+</p>
+
+<h2>🧩 Practice Activities</h2>
+
+<div class="practice-section">
+
+  <a href="https://crosswordlabs.com/view/computer-functions-3"
+     target="_blank"
+     class="practice-btn">
+    🔗 Computer Functions Crossword
+  </a>
+
+  <a href="https://thewordsearch.com/puzzle/9335100/computer-function-and-instruction-cycle/"
+     target="_blank"
+     class="practice-btn">
+    🧠 Instruction Cycle Word Search
+  </a>
+
+</div>
+
+<style>
+.practice-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.practice-btn {
+  display: inline-block;
+  padding: 14px 26px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 260px;
+}
+
+.practice-btn:hover {
+  background-color: white;
+  color: black;
+}
+</style>
+
+<!-- 🔽 FLASHCARDS CONVERTED TO NORMAL INTERACTIVE TEXT 🔽 -->
+
+<h3>📘 Key Concepts – Quick Revision</h3>
+
+<div class="concept-container">
+
+  <div class="concept-item">
+    <div class="concept-title">Instruction Cycle</div>
+    <div class="concept-desc">Fetch and execute of one instruction.</div>
+  </div>
+
+  <div class="concept-item">
+    <div class="concept-title">Program Counter (PC)</div>
+    <div class="concept-desc">Holds address of the next instruction.</div>
+  </div>
+
+  <div class="concept-item">
+    <div class="concept-title">Instruction Register (IR)</div>
+    <div class="concept-desc">Stores the current instruction.</div>
+  </div>
+
+  <div class="concept-item">
+    <div class="concept-title">Accumulator (AC)</div>
+    <div class="concept-desc">Stores intermediate results.</div>
+  </div>
+
+  <div class="concept-item">
+    <div class="concept-title">Opcode</div>
+    <div class="concept-desc">Specifies the operation to perform.</div>
+  </div>
+
+  <div class="concept-item">
+    <div class="concept-title">HALT</div>
+    <div class="concept-desc">Stops program execution.</div>
+  </div>
+
+</div>
+
+<style>
+.concept-container {
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.concept-item {
+  border: 2px solid black;
+  margin-bottom: 12px;
+}
+
+.concept-title {
+  background: black;
+  color: white;
+  padding: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.concept-desc {
+  display: none;
+  padding: 14px;
+  background: #f5f5f5;
+  line-height: 1.6;
+}
+</style>
+
+<script>
+document.querySelectorAll(".concept-title").forEach(title => {
+  title.addEventListener("click", () => {
+    const desc = title.nextElementSibling;
+    desc.style.display = desc.style.display === "block" ? "none" : "block";
+  });
+});
+</script>
+<hr>
+<h1>🔁 RECAP: INTERRUPTS</h1>
+
+<div class="recap-box">
+  <h2>1. Meaning of Interrupt</h2>
+  <p>An <b>interrupt</b> is a signal sent to the CPU to request immediate attention.</p>
+  <ul>
+    <li>Generated by <b>I/O devices</b></li>
+    <li>Generated by <b>internal CPU conditions</b></li>
+  </ul>
+  <p>The CPU <b>pauses</b> the current program (does not discard it).</p>
+  <p class="mcq">MCQ Focus: Interrupt is NOT a program, instruction, or interpreter.</p>
+</div>
+
+<div class="recap-box">
+  <h2>2. Purpose of Interrupts</h2>
+  <p>Interrupts improve <b>CPU efficiency</b>.</p>
+  <ul>
+    <li>Without interrupts → CPU waits idle during I/O</li>
+    <li>With interrupts → CPU executes another program</li>
+  </ul>
+  <p class="mcq">MCQ Focus: Interrupts reduce wasted CPU time.</p>
+</div>
+
+<div class="recap-box">
+  <h2>3. Interrupt Service Routine (ISR)</h2>
+  <p>ISR is a <b>special OS routine</b> executed when an interrupt occurs.</p>
+  <ul>
+    <li>Identifies interrupt source</li>
+    <li>Performs service</li>
+    <li>Restores CPU state</li>
+    <li>Resumes program</li>
+  </ul>
+  <p class="mcq">MCQ Focus: ISR is NOT a user program.</p>
+</div>
+
+<div class="recap-box">
+  <h2>4. Program Execution Without Interrupts</h2>
+  <p>CPU waits until I/O completes and remains idle.</p>
+  <p class="mcq">MCQ Focus: CPU time is wasted.</p>
+</div>
+
+<div class="recap-box">
+  <h2>5. Program Execution With Interrupts</h2>
+  <p>CPU overlaps <b>I/O and program execution</b>.</p>
+  <p class="mcq">MCQ Focus: Interrupts allow parallelism.</p>
+</div>
+
+<div class="recap-box">
+  <h2>6. Instruction Cycle With Interrupts</h2>
+  <ol>
+    <li>Fetch</li>
+    <li>Execute</li>
+    <li>Interrupt</li>
+  </ol>
+  <p class="mcq">MCQ Focus: Interrupt cycle is added to instruction cycle.</p>
+</div>
+
+<div class="recap-box">
+  <h2>7. Steps in Interrupt Processing</h2>
+  <ol>
+    <li>Complete current instruction</li>
+    <li>Save PC and registers</li>
+    <li>Disable interrupts</li>
+    <li>Load ISR address</li>
+    <li>Execute ISR</li>
+    <li>Restore context</li>
+    <li>Resume program</li>
+  </ol>
+  <p class="mcq">MCQ Focus: CPU always finishes current instruction first.</p>
+</div>
+
+<div class="recap-box">
+  <h2>8. Context Saving</h2>
+  <ul>
+    <li>Program Counter</li>
+    <li>Registers</li>
+    <li>Processor state</li>
+  </ul>
+  <p class="mcq">MCQ Focus: Context saving prevents data loss.</p>
+</div>
+
+<div class="recap-box">
+  <h2>9. Interrupt Vector</h2>
+  <p>A table that stores <b>addresses of ISRs</b>.</p>
+  <p class="mcq">MCQ Focus: Stores addresses, NOT instructions.</p>
+</div>
+
+<div class="recap-box">
+  <h2>10. Types of Interrupts</h2>
+  <p><b>External:</b> Keyboard, printer, disk (I/O devices)</p>
+  <p><b>Internal:</b> Divide by zero, overflow, invalid instruction</p>
+  <p class="mcq">MCQ Focus: I/O → External | Errors → Internal</p>
+</div>
+
+<div class="recap-box">
+  <h2>11. Multiple Interrupts</h2>
+  <p>Handled using <b>priority</b> and <b>masking</b>.</p>
+  <p class="mcq">MCQ Focus: Higher priority is serviced first.</p>
+</div>
+
+<div class="recap-box">
+  <h2>12. Interrupt Priority</h2>
+  <p>Determines the order of interrupt servicing.</p>
+</div>
+
+<div class="recap-box">
+  <h2>13. Interrupt Enable & Disable</h2>
+  <p>Used to protect critical sections.</p>
+  <p class="mcq">MCQ Focus: Interrupts are disabled during ISR.</p>
+</div>
+
+<div class="recap-box">
+  <h2>14. Nested Interrupts</h2>
+  <p>Higher priority interrupts can interrupt an ISR.</p>
+  <p class="mcq">MCQ Focus: Multiple context saves occur.</p>
+</div>
+
+<div class="memory-box">
+  <h2>🧠 FINAL MCQ MEMORY TRICKS</h2>
+  <ul>
+    <li>Interrupt → Signal</li>
+    <li>ISR → OS routine</li>
+    <li>Context → Saved CPU state</li>
+    <li>Vector → Address table</li>
+    <li>External → I/O devices</li>
+    <li>Internal → CPU errors</li>
+  </ul>
+</div>
+
+<div class="quiz-box">
+  <a href="https://wayground.com/join?gc=56076198&source=liveDashboard"
+     target="_blank" class="quiz-btn">
+    🧩 Attend the Interrupt Riddle Quiz
+  </a>
+</div>
+<style>
+.recap-box, .memory-box {
+  border-left: 5px solid black;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+
+.recap-box h2, .memory-box h2 {
+  margin-top: 0;
+}
+
+.mcq {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.quiz-box {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.quiz-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.quiz-btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Interrupts – Flash Cards</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* FLASHCARD GRID */
+.flashcard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* FLASHCARD */
+.flashcard {
+  perspective: 1000px;
+}
+
+.card-inner {
+  height: 160px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flashcard:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-front {
+  background: white;
+}
+
+.card-back {
+  background: #f2f2f2;
+  transform: rotateY(180deg);
+}
+
+/* QUIZ BUTTON */
+.quiz-box {
+  margin-top: 40px;
+}
+
+.quiz-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 2px solid black;
+}
+
+.quiz-btn:hover {
+  background: white;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Interrupts – Flash Cards</h1>
+
+<div class="flashcard-container">
+
+  <div class="flashcard">
+    <div class="card-inner">
+      <div class="card-front">What is an Interrupt?</div>
+      <div class="card-back">A signal sent to the CPU requesting immediate attention.</div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="card-inner">
+      <div class="card-front">Interrupt is NOT?</div>
+      <div class="card-back">Not a program, not an instruction, not an interpreter.</div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="card-inner">
+      <div class="card-front">Purpose of Interrupts</div>
+      <div class="card-back">Improves CPU efficiency and reduces idle waiting time.</div>
+    </div>
+  </div>
+
+  <div class="flashcard">
+    <div class="card-inner">
+      <div class="card-front">What is ISR?</div>
+      <div class="card-back">Interrupt Service Routine – an OS routine.</div>
+<hr>
+
+      <!DOCTYPE html>
+<html>
+<head>
+<title>Bus Interconnection</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Paragraph box */
+.box {
+  border: 2px solid black;
+  padding: 15px;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Normal notes (replacing flashcards) */
+.notes {
+  max-width: 900px;
+  margin: auto;
+}
+
+.note {
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.links {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+.links a:hover {
+  background: white;
+  color: black;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Bus Interconnection</h1>
+
+<div class="box">
+A <b>bus interconnection</b> is a common communication path used to connect
+the <b>CPU</b>, <b>main memory</b>, and <b>I/O devices</b>.
+It allows the transfer of <b>data, instructions, and control signals</b>
+using shared signal lines.
+Only one device can control the bus at a time.
+Shared buses reduce hardware cost but may cause performance bottlenecks.
+Modern systems often use <b>point-to-point interconnections</b>.
+</div>
+
+<h2>Key Points</h2>
+
+<!-- FLASHCARDS CONVERTED TO NORMAL TEXT -->
+<div class="notes">
+  <div class="note">
+    <b>Bus Interconnection:</b><br>
+    Shared communication path.
+  </div>
+
+  <div class="note">
+    <b>Bus Purpose:</b><br>
+    Transfers data and instructions.
+  </div>
+
+  <div class="note">
+    <b>Bus Control:</b><br>
+    Only one device can use the bus at a time.
+  </div>
+
+  <div class="note">
+    <b>Bus Protocol:</b><br>
+    Set of rules for communication.
+  </div>
+
+  <div class="note">
+    <b>Bus Limitation:</b><br>
+    Limited bandwidth.
+  </div>
+
+  <div class="note">
+    <b>Modern Systems:</b><br>
+    Use point-to-point links.
+  </div>
+</div>
+
+<div class="links">
+  <a href="https://quiz.com/c165ab16-d2a9-4257-a086-3bcbfd099bce" target="_blank">
+    MCQ Quiz
+  </a>
+
+  <a href="https://crosswordlabs.com/view/bus-interconnection" target="_blank">
+    Puzzle
+  </a>
+
+  <a href="https://thewordsearch.com/puzzle/9335113/bus-interconnection/" target="_blank">
+    Word Search
+  </a>
+
+  <a href="https://youtu.be/9WM5qpF1Zkw?si=eUR31uLudAoO7JNQ" target="_blank">
+    YouTube Video
+  </a>
+</div>
+
+</body>
+</html>
+<hr>
+
+<h2 style="color:black; border-bottom:3px solid black; 
+           padding-bottom:6px; margin-top:30px;">
+    PCIe TLP Transaction Types
+</h2>
+<div style="text-align:center; margin:20px 0;">
+  <a href="https://quizlet.com/in/1125858789/computer-arc-flash-cards/?i=6f54m3&x=1jqU"
+     target="_blank"
+     style="display:inline-block; padding:14px 28px; background:black; color:white;
+            text-decoration:none; font-weight:bold; border:2px solid black; border-radius:8px;">
+    📘 Open Quizlet: Computer Arc Flashcards
+  </a>
+</div>
+
+<p style="font-size:16px; line-height:1.6; color:black;">
+    In <b>PCI Express (PCIe)</b>, communication between devices is carried out using 
+    <b>Transaction Layer Packets (TLPs)</b>. These packets define how data, control 
+    information, and status messages are exchanged between the <b>root complex</b>, 
+    endpoints, and switches.
+</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Computer Architecture – Notes</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.notes {
+  max-width: 900px;
+  margin: auto;
+}
+
+.note {
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+}
+
+.note b {
+  display: block;
+  margin-bottom: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎯 Computer Architecture – Key Concepts</h1>
+
+<!-- FLASHCARDS CONVERTED TO NORMAL NOTES -->
+<div class="notes">
+
+  <div class="note">
+    <b>🧭 Address Bus</b>
+    Carries the address of memory or I/O location accessed by the CPU.
+  </div>
+
+  <div class="note">
+    <b>📍 Address Lines</b>
+    Individual signal lines representing a binary address.
+  </div>
+
+  <div class="note">
+    <b>⚖️ Arbitration</b>
+    Decides which device gets control of the bus.
+  </div>
+
+  <div class="note">
+    <b>🔌 Bus</b>
+    Shared communication path connecting CPU, memory, and I/O devices.
+  </div>
+
+  <div class="note">
+    <b>🎛️ Control Lines</b>
+    Carry signals like read, write, interrupt, and clock.
+  </div>
+
+  <div class="note">
+    <b>📦 Data Bus</b>
+    Transfers actual data between system components.
+  </div>
+
+  <div class="note">
+    <b>⚡ Differential Signaling</b>
+    Uses opposite signals to improve speed and reliability.
+  </div>
+
+  <div class="note">
+    <b>🚨 Interrupt</b>
+    Signal that temporarily halts CPU execution.
+  </div>
+
+  <div class="note">
+    <b>🛠️ ISR</b>
+    Interrupt Service Routine that handles interrupts.
+  </div>
+
+  <div class="note">
+    <b>🧠 MAR</b>
+    Stores address of memory location to be accessed.
+  </div>
+
+  <div class="note">
+    <b>📥 MBR</b>
+    Temporarily holds data being transferred.
+  </div>
+
+</div>
+
+</body>
+</html>
+      
+
